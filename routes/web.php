@@ -21,5 +21,5 @@ route::controller(pageController::class)->group(function ()
 {
     route::get('/', 'home')->name('home');
     route::get('/blog', 'blog')->name('blog');
-    route::get('/blog/{slug}', 'post')->name('post');
+    route::get('/blog/{post:slug}', 'post')->name('post');
 });

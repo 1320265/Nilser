@@ -9,6 +9,9 @@
             <a href="{{route('post' ,$post['slug'] )}}">
                 {{$post['title']}}
             </a>
+
+        <br>
+        <span> Creado por {{$post->user->name}} </span>
         </p>
 
     @endforeach
