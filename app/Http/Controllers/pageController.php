@@ -14,6 +14,9 @@ class pageController extends Controller
     public function blog()
     {
         $posts = Post::all();
+        //$posts = post::first();
+        //$posts = post::find(1);
+        //dd($posts);
         return view('blog',compact('posts'));
     }
     public function post(post $post)
